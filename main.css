@@ -262,3 +262,15 @@ hr{
         width: 100%;
     }
 }
+
+@media print {
+  .badge {
+    background-color: #ffffff !important; 
+    color: #4b0082 !important;            
+    border: 2px solid #4b0082 !important; 
+  }
+  
+  .badge-text{
+    display: inline !important;
+  }
+}
