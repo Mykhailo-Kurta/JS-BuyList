@@ -3,14 +3,64 @@
 <head lang="uk">
     <meta charset="UTF-8">
     <title>My Page</title>
-
-
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+	<main>
+        <figure class = "main-block">
+            <input type = "text" required placeholder="Назва товару" class="name-enter">
+            <button type="submit" class="add-item">Додати</button>
+            <hr>
+            <section class="inner-box">
+            <p class="tomato">Помідори</p>
+            <figure class="number-buy">2</figure>
+            <button type="submit" class="buy-no">Не куплено</button>
+            </section>
+            <hr>
+            <section class="inner-box">
+            <p class="biscuts">Печиво</p>
+            <button type="submit" class="sub-count">-</button>
+            <figure class="number">2</figure>
+            <button type="submit" class="add-count">+</button>
+            <button type="submit" class="buy">Куплено</button>
+            <button type="submit" class="cancel">X</button>
+            </section>
+            <hr>
+            <section class="inner-box">
+            <p class="biscuts">Сир</p>
+            <button type="submit" class="sub-count-dis">-</button>
+            <figure class="number">1</figure>
+            <button type="submit" class="add-count">+</button>
+            <button type="submit" class="buy">Куплено</button>
+            <button type="submit" class="cancel">X</button>
+            </section>
+        </figure>
+    </main>
+    <aside>
+        <figure class="additional-block">
+            <h3 class="header">Залишилося</h3>
+            <hr>
+            <section id="wait">
+            <figure class="buy-show">
+                <p class="small-font">Печиво</p>
+                <label class="small-label">2</label>
+            </figure>
+            <figure class="buy-show">
+                <p class="small-font">Сир</p>
+                <label class="small-label">1</label>
+            </figure>
+            </section>
+            <hr>
+            <h3 class="header">Куплено</h3>
+            <hr>
+            <section id="bought">
+            <figure class="buy-show">
+                <p class="small-font-dis">Помідори</p>
+                <label class="small-label-dis">2</label>
+            </figure>
+            </section>
+        </figure>
+    </aside>
+    <script src="script.js"></script>
 </body>
 </html>
